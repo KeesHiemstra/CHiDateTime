@@ -135,15 +135,20 @@ namespace CHiDateTimeWeekNumber
       return ISOWeekNoExtended;
     }
 
-    public static DateTime? WeekNoCompactToDate(string reference)
+    /// <summary>
+    /// Inverse the WeekNoCompact and return the date.
+    /// </summary>
+    /// <param name="weekNoCompact"></param>
+    /// <returns></returns>
+    public static DateTime? WeekNoCompactToDate(string weekNoCompact)
     {
-      if (string.IsNullOrEmpty(reference))
+      if (string.IsNullOrEmpty(weekNoCompact) || weekNoCompact.Length < 5)
       {
         return null;
       }
 
       int Year = -1;
-      int.TryParse(reference.Substring(0, 2), out Year);
+      int.TryParse(weekNoCompact.Substring(0, 2), out Year);
       if (Year == -1)
       {
         return null;
@@ -152,14 +157,14 @@ namespace CHiDateTimeWeekNumber
       Year = Year + 2000;
 
       int Week = -1;
-      int.TryParse(reference.Substring(2, 2), out Week);
+      int.TryParse(weekNoCompact.Substring(2, 2), out Week);
       if (Week == -1)
       {
         return null;
       }
 
       int Day = -1;
-      int.TryParse(reference.Substring(4, 1), out Day);
+      int.TryParse(weekNoCompact.Substring(4, 1), out Day);
       if (Day == -1)
       {
         return null;
