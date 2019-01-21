@@ -1,0 +1,91 @@
+﻿<Window x:Class="DateTimeWeekNumber_1904101.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DateTimeWeekNumber_1904101"
+        mc:Ignorable="d"
+        Title="WeekNumber" Height="200" Width="250">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal"
+                    Grid.Column="1"
+                    Grid.Row="1">
+            <TextBlock Text="Date: "
+                       VerticalAlignment="Center"/>
+            <DatePicker Name="Date"
+                        SelectedDateChanged="Date_SelectedDateChanged"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    Margin="50,0,0,0"
+                    VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,5">
+                <TextBlock Text="Week number: "
+                           Width="80"
+                           VerticalAlignment="Center"/>
+                <TextBlock Name="WeekNumber"/>
+                <Button Content="Copy"
+                            Click="ButtonCopyWeekNumber_Click"
+                            Margin="5,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,5">
+                <TextBlock Text="Reference: "
+                           Width="80"
+                           VerticalAlignment="Center"/>
+                <TextBlock Name="Reference"/>
+                <Button Content="Copy"
+                        Click="ButtonCopyReference_Click"
+                        Margin="5,0,0,0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Column="1"
+                    Grid.Row="5">
+            <TextBlock Text="Reference: "
+                       VerticalAlignment="Center"/>
+            <TextBox Name="InputReference"
+                     Width="80"
+                     VerticalAlignment="Center"/>
+            <Button Content="Calc"
+                    Click="ButtonCalculateDate_Click"
+                    VerticalAlignment="Center"
+                    Margin="5,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical"
+                    Grid.Column="1"
+                    Grid.Row="7"
+                    Margin="50,0,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Date: "
+                           VerticalAlignment="Center"/>
+                <TextBlock Name="ReferenceDate"
+                           Text="n/a"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>

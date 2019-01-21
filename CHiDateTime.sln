@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeWeekNumber", "DateTimeWeekNumber\DateTimeWeekNumber.csproj", "{2B6D0A73-B3A7-42E7-944E-1F097580E4B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHiDateTimeWeekNumber", "DateTimeWeekNumber\CHiDateTimeWeekNumber.csproj", "{2B6D0A73-B3A7-42E7-944E-1F097580E4B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeWeekNumber_1904101", "DateTimeWeekNumber_1904101\DateTimeWeekNumber_1904101.csproj", "{C8FA8850-5EB6-48D4-8F59-2BF7D28072C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2B6D0A73-B3A7-42E7-944E-1F097580E4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B6D0A73-B3A7-42E7-944E-1F097580E4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B6D0A73-B3A7-42E7-944E-1F097580E4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FA8850-5EB6-48D4-8F59-2BF7D28072C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FA8850-5EB6-48D4-8F59-2BF7D28072C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FA8850-5EB6-48D4-8F59-2BF7D28072C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FA8850-5EB6-48D4-8F59-2BF7D28072C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
