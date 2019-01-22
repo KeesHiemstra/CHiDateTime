@@ -100,5 +100,11 @@
       <Name>CHiDateTimeWeekNumber</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WeekNumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Copy.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
