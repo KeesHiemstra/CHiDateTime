@@ -95,16 +95,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DateTimeWeekNumber\CHiDateTimeWeekNumber.csproj">
-      <Project>{2b6d0a73-b3a7-42e7-944e-1f097580e4b2}</Project>
-      <Name>CHiDateTimeWeekNumber</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="WeekNumber.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CHiDateTimeWeekNumber\CHiDateTimeWeekNumber.csproj">
+      <Project>{2b6d0a73-b3a7-42e7-944e-1f097580e4b2}</Project>
+      <Name>CHiDateTimeWeekNumber</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
